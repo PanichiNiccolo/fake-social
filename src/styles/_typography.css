@@ -1,0 +1,21 @@
+/* Base font setup */
+.text-base {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: var(--secondary-color);
+}
+
+/* Varianti di peso */
+.text-bold {
+  font-weight: 700;
+}
+
+.text-regular {
+  font-weight: 400;
+}
+
+.text-alternative {
+  color: var(--tertiary-color);
+}
