@@ -1,0 +1,59 @@
+import {Post} from '../models/post.model';
+
+export const POSTS: Post[] = [
+  {
+    "id": "fc440157-f062-450c-bd9c-ca41ee9ed9a3",
+    "user": "giulionegallone",
+    "avatarUrl": "https://media.tenor.com/6DiM1V23hkwAAAAM/two-black-people.gif",
+    "publishTime": "21:15",
+    "text": "Ragazzi qualcuno sa dove nascondere il cadavere di una donna ebraica, 154cm, 45kg, circa 23 anni? grazie.",
+    "likes": 721,
+    "comments": [
+      {
+        "id": "73db2fe3-28d5-4764-9716-6ed018770460",
+        "user": "XXx_anna-frank_1802_xXX",
+        "text": "Qui in soffitta abbiamo un sacco di spazio!!! Vieni pure. Siamo io e Stefano Cucchi."
+      },
+      {
+        "id": "d340106e-f01f-47b6-bb80-d18185191fff",
+        "user": "matteo_piccolo_ermatto",
+        "text": "Link OF in bio... 50% off per le vacanze di natale!"
+      }
+    ]
+  },
+  {
+    "id": "1680394c-0b19-4652-bcca-fb91120a3293",
+    "user": "nikkopaniko",
+    "avatarUrl": "https://media.gettyimages.com/id/182791211/it/foto/rabbino-che-tiene-un-libro.jpg?s=612x612&w=gi&k=20&c=vpFbm1ia0XAQgnVLBozZrzyUomiwh_nskn1ikCp99qE=",
+    "publishTime": "21:00",
+    "text": "Io ADORO 😻 i drummini con il Pubelo. Voglio essere picchiato dalla polizia. W la palestina.",
+    "likes": 150,
+    "comments": [
+      {
+        "id": "0bc42486-2022-4acd-88dd-3ae96ab2215c",
+        "user": "filippo-turetta",
+        "text": "Ho ucciso la mia fidanzata e sto andando in Germania"
+      }
+    ]
+  },
+  {
+    "id": "a21d9c06-b4c8-41cd-8a68-9b8322d6d3b4",
+    "user": "andrea__gay",
+    "avatarUrl": "https://uploads.dailydot.com/2024/11/honse-meme.jpg?auto=compress&fm=pjpg&w=2000&h=1000",
+    "publishTime": "20:35",
+    "text": "Ho hackerato l'onlyFans di matteo. scrivetemi in DM. NO PERDITEMPO NO PERSONE DI COLORE. 😤",
+    "likes": 12,
+    "comments": [
+      {
+        "id": "dc9563ef-8e5f-4316-95ac-77eea4e147b8",
+        "user": "er_negro",
+        "text": "Sto stuprando la tua sorellina ADESSO"
+      },
+      {
+        "id": "858e2454-de02-4f75-9ab9-c767ee7ba1f4",
+        "user": "guardiadifinanzaofficial",
+        "text": "favorisca lo scontrino maledetto negro"
+      }
+    ]
+  }
+];
