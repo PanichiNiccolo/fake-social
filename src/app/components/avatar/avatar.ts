@@ -6,10 +6,10 @@ import {NgOptimizedImage} from '@angular/common';
   imports: [
     NgOptimizedImage
   ],
-  templateUrl: './avatar.component.html',
-  styleUrl: './avatar.component.css'
+  templateUrl: './avatar.html',
+  styleUrl: './avatar.css'
 })
-export class AvatarComponent {
+export class Avatar {
 
   private readonly DEFAULT_PX_SIZE: number = 64;
 

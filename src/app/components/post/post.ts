@@ -5,8 +5,8 @@ import {Post} from '../../models/post.model';
 @Component({
   selector: 'app-post',
   imports: [],
-  templateUrl: './post.component.html',
-  styleUrl: './post.component.css'
+  templateUrl: './post.html',
+  styleUrl: './post.css'
 })
 export class PostComponent {
 
