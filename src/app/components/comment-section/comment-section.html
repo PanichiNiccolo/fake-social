@@ -1,1 +1,12 @@
-<p>comment-section works!</p>
+<div class="comment-section__title">
+  <span class="text-base text-regular text-alternative">Commenti per</span>
+  <span [innerHTML]="singlePost.user" class="text-base text-bold text-alternative"></span>
+</div>
+
+@if (singlePost.comments.length > 0) {
+  <div class="comment-section__comment-list-wrapper">
+    @for (comment of singlePost.comments; track comment.id; let last = $last) {
+      <app-comment [class.comment-section__comment-wrapper]="!last"/>
+    }
+  </div>
+}
