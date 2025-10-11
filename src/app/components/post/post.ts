@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {POSTS} from '../../data/posts';
-import {Post} from '../../models/post.model';
+import {PostModel} from '../../models/post.model';
 
 @Component({
   selector: 'app-post',
@@ -8,8 +8,8 @@ import {Post} from '../../models/post.model';
   templateUrl: './post.html',
   styleUrl: './post.css'
 })
-export class PostComponent {
+export class Post {
 
-  data: Post[] = POSTS;
-  singlePost: Post = POSTS[0];
+  data: PostModel[] = POSTS;
+  singlePost: PostModel = POSTS[0];
 }

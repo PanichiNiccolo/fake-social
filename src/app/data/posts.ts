@@ -1,6 +1,6 @@
-import {Post} from '../models/post.model';
+import {PostModel} from '../models/post.model';
 
-export const POSTS: Post[] = [
+export const POSTS: PostModel[] = [
   {
     "id": "fc440157-f062-450c-bd9c-ca41ee9ed9a3",
     "user": "giulionegallone",

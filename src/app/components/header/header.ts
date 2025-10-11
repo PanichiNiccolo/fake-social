@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Post} from '../../models/post.model';
+import {PostModel} from '../../models/post.model';
 import {POSTS} from '../../data/posts';
 import {Avatar} from '../avatar/avatar';
 
@@ -13,6 +13,6 @@ import {Avatar} from '../avatar/avatar';
 })
 export class Header {
 
-  data: Post[] = POSTS;
-  singlePost: Post = POSTS[1];
+  data: PostModel[] = POSTS;
+  singlePost: PostModel = POSTS[1];
 }

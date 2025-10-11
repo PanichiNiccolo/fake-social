@@ -1,10 +1,10 @@
-import {Post} from '../models/post.model';
+import {PostModel} from '../models/post.model';
 import {POSTS} from '../data/posts';
 
 export interface SocialSlice {
   readonly likeIt: boolean;
   readonly commented: boolean;
-  readonly posts: Post[];
+  readonly posts: PostModel[];
 }
 
 export const initialSocialSlice: SocialSlice = {
