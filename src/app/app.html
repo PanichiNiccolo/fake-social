@@ -1,2 +1,3 @@
-<app-header/>
-<app-comment/>
+@for (post of store.posts(); track $index) {
+  <app-post [index]="$index"/>
+}

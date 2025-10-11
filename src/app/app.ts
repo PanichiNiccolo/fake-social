@@ -1,11 +1,10 @@
-import {Component, inject, signal} from '@angular/core';
+import {Component, inject} from '@angular/core';
 import {SocialStore} from './store/social.store';
-import {Header} from './components/header/header';
-import {Comment} from './components/comment/comment';
+import {Post} from './components/post/post';
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Comment],
+  imports: [Post],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,12 +1,12 @@
-<app-avatar [urlImage]="singlePost.avatarUrl"/>
+<app-avatar [urlImage]="post().avatarUrl"/>
 
 <div class="post-header__content">
   <div class="post-header__info">
-    <span [innerHTML]="singlePost.user" class="text-base text-bold"></span>
+    <span [innerHTML]="post().user" class="text-base text-bold"></span>
     <span class="text-base text-bold text-alternative">•</span>
-    <span [innerHTML]="singlePost.publishTime" class="text-base text-bold text-alternative"></span>
+    <span [innerHTML]="post().publishTime" class="text-base text-bold text-alternative"></span>
   </div>
 
-  <span [innerHTML]="singlePost.text" class="text-base text-regular"></span>
+  <span [innerHTML]="post().text" class="text-base text-regular"></span>
 </div>
 

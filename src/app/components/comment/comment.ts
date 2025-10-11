@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {PostModel} from '../../models/post.model';
-import {POSTS} from '../../data/posts';
+import {Component, input} from '@angular/core';
 import {CommentModel} from '../../models/comment.model';
 
 @Component({
@@ -11,7 +9,6 @@ import {CommentModel} from '../../models/comment.model';
 })
 export class Comment {
 
-  data: PostModel[] = POSTS;
-  singleComment: CommentModel = POSTS[1].comments[0];
+  comment = input.required<CommentModel>();
 
 }

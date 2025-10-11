@@ -1,7 +1,7 @@
-import {Component} from '@angular/core';
-import {PostModel} from '../../models/post.model';
-import {POSTS} from '../../data/posts';
+import {Component, computed, inject, input} from '@angular/core';
 import {Avatar} from '../avatar/avatar';
+import {PostModel} from '../../models/post.model';
+import {SocialStore} from '../../store/social.store';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +13,9 @@ import {Avatar} from '../avatar/avatar';
 })
 export class Header {
 
-  data: PostModel[] = POSTS;
-  singlePost: PostModel = POSTS[1];
+  readonly store = inject(SocialStore);
+
+  index = input.required<number>();
+
+  post = computed(() => this.store.getPostByIndex(this.index()));
 }

@@ -1,6 +1,4 @@
-import { Component } from '@angular/core';
-import {POSTS} from '../../data/posts';
-import {PostModel} from '../../models/post.model';
+import {Component, input} from '@angular/core';
 import {Header} from '../header/header';
 import {CommentSection} from '../comment-section/comment-section';
 
@@ -15,6 +13,5 @@ import {CommentSection} from '../comment-section/comment-section';
 })
 export class Post {
 
-  data: PostModel[] = POSTS;
-  singlePost: PostModel = POSTS[0];
+  index = input.required<number>();
 }
