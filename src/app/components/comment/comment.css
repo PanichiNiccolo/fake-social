@@ -2,7 +2,5 @@
   display: flex;
   flex-direction: column;
   gap: .5rem;
-  padding: .5rem;
-
-  border: 3px solid deeppink;//TODO: rimuovere
+  padding: 1rem;
 }
