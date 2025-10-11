@@ -4,7 +4,7 @@
   gap: 1rem;
   padding: 1rem;
 
-  border: 3px solid yellow;//TODO: rimuovere
+  border-bottom: .125rem solid var(--secondary-color);
 }
 
 .post-header__content {
