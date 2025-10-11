@@ -1,4 +1,4 @@
-import {Component, computed, inject, input} from '@angular/core';
+import {Component, inject, input} from '@angular/core';
 import {FormsModule} from '@angular/forms';
 import {SocialStore} from '../../store/social.store';
 import {PostModel} from '../../models/post.model';

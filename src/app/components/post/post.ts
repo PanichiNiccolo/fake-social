@@ -1,6 +1,7 @@
 import {Component, input} from '@angular/core';
 import {Header} from '../header/header';
 import {CommentSection} from '../comment-section/comment-section';
+import {PostModel} from '../../models/post.model';
 
 @Component({
   selector: 'app-post',
@@ -13,5 +14,5 @@ import {CommentSection} from '../comment-section/comment-section';
 })
 export class Post {
 
-  index = input.required<number>();
+  post = input.required<PostModel>();
 }

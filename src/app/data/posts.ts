@@ -8,6 +8,8 @@ export const POSTS: PostModel[] = [
     "publishTime": "21:15",
     "text": "Ragazzi qualcuno sa dove nascondere il cadavere di una donna ebraica, 154cm, 45kg, circa 23 anni? grazie.",
     "likes": 721,
+    "isLiked": false,
+    "isCommented": false,
     "comments": [
       {
         "id": "73db2fe3-28d5-4764-9716-6ed018770460",
@@ -28,6 +30,8 @@ export const POSTS: PostModel[] = [
     "publishTime": "21:00",
     "text": "Io ADORO 😻 i drummini con il Pubelo. Voglio essere picchiato dalla polizia. W la palestina.",
     "likes": 150,
+    "isLiked": true,
+    "isCommented": false,
     "comments": [
       {
         "id": "0bc42486-2022-4acd-88dd-3ae96ab2215c",
@@ -43,6 +47,8 @@ export const POSTS: PostModel[] = [
     "publishTime": "20:35",
     "text": "Ho hackerato l'onlyFans di matteo. scrivetemi in DM. NO PERDITEMPO NO PERSONE DI COLORE. 😤",
     "likes": 12,
+    "isLiked": false,
+    "isCommented": false,
     "comments": [
       {
         "id": "dc9563ef-8e5f-4316-95ac-77eea4e147b8",

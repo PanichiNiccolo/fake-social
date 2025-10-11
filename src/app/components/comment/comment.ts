@@ -10,5 +10,4 @@ import {CommentModel} from '../../models/comment.model';
 export class Comment {
 
   comment = input.required<CommentModel>();
-
 }

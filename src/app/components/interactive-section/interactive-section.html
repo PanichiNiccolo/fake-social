@@ -1,0 +1,21 @@
+<div class="interactive-section__wrapper">
+  <button mat-icon-button class="interactive-section__button"
+          [class.like-it]="post().isLiked"
+          (click)="onLikeClick()">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <span [innerHTML]="post().likes"
+        [class.actioned]="post().isLiked">
+  </span>
+</div>
+
+ @let commentsQnt = post().comments.length;
+<div class="interactive-section__wrapper">
+  <button mat-icon-button class="interactive-section__button"
+          [class.actioned]="post().isCommented">
+    <mat-icon>chat bubble</mat-icon>
+  </button>
+  <span [innerHTML]="commentsQnt"
+        [class.actioned]="post().isCommented">
+  </span>
+</div>

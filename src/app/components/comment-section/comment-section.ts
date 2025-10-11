@@ -1,8 +1,7 @@
-import {Component, computed, inject, input} from '@angular/core';
+import {Component, input} from '@angular/core';
 import {PostModel} from '../../models/post.model';
 import {Comment} from '../comment/comment';
 import {CommentUpdater} from '../comment-updater/comment-updater';
-import {SocialStore} from '../../store/social.store';
 
 @Component({
   selector: 'app-comment-section',
@@ -15,9 +14,5 @@ import {SocialStore} from '../../store/social.store';
 })
 export class CommentSection {
 
-  readonly store = inject(SocialStore);
-
-  index = input.required<number>();
-
-  post = computed(() => this.store.getPostByIndex(this.index()));
+  post = input.required<PostModel>();
 }

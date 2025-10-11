@@ -1,2 +1,8 @@
-<img [ngSrc]="urlImage()" [width]="pxSize()" [height]="pxSize()" alt="Avatar user"/>
+<div class="avatar">
+  <img [ngSrc]="urlImage()"
+       alt="Avatar user"
+       fill
+       loading="lazy"/>
+</div>
+
 
