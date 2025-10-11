@@ -4,7 +4,6 @@
 
   gap: 1rem;
   padding: 1rem;
-  border: 3px solid darkgreen;//TODO: rimuovere
 }
 
 .comment-section__title {
@@ -21,5 +20,5 @@
 }
 
 .comment-section__comment-wrapper {
-  border-bottom: 2px solid var(--tertiary-color);
+  border-bottom: .125rem solid var(--tertiary-color);
 }
