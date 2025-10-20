@@ -1,15 +1,12 @@
-<form #templateForm="ngForm" (ngSubmit)="onSubmit(templateForm)" class="comment-updater__form">
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="comment-updater__form">
 
-  <input name="comment" ngModel
+  <input formControlName="comment"
          type="text"
-         required
-         minlength="2"
-         maxlength="150"
          placeholder="Lascia un commento..."
          class="comment-updater__input">
 
   <button type="submit"
-          [disabled]="templateForm.invalid"
+          [disabled]="form.invalid"
           class="comment-updater__button">
     Invia
   </button>
