@@ -6,18 +6,15 @@ export function toggleLike(id: string): PartialStateUpdater<SocialSlice> {
   return state => ({
     posts: state.posts
       .map(post => {
-        if (post.id === id) {
-          const isLiked: boolean = !post.isLiked;
-          const likes: number = post.likes + (isLiked ? 1 : -1);
-
-          return {
-            ...post,
-            isLiked,
-            likes,
-          };
-        } else {
+        if (post.id !== id) {
           return post;
         }
+
+        return {
+          ...post,
+          isLiked: !post.isLiked,
+          likes: post.likes + (post.isLiked ? 1 : -1)
+        };
       }),
   });
 }
@@ -26,25 +23,21 @@ export function addComment(id: string, commentText: string): PartialStateUpdater
   return state => ({
     posts: state.posts
       .map(post => {
-        if (post.id === id) {
-          const newComment: CommentModel = {
-            id: crypto.randomUUID(),
-            user: "TU",
-            text: commentText,
-          };
-
-          const comments: CommentModel[] = [...post.comments, newComment];
-          const isCommented: boolean = true;
-
-          return {
-            ...post,
-            isCommented,
-            comments
-          };
-
-        } else {
+        if (post.id !== id) {
           return post;
         }
+
+        const newComment: CommentModel = {
+          id: crypto.randomUUID(),
+          user: "TU",
+          text: commentText,
+        };
+
+        return {
+          ...post,
+          isCommented: true,
+          comments: [...post.comments, newComment],
+        };
       }),
   });
 }
