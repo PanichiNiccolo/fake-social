@@ -2,12 +2,18 @@
 
 <div class="post-header__content">
   <div class="post-header__info">
-    <span [innerHTML]="post().user" class="text-base text-bold"></span>
+    <span class="text-base text-bold">
+      {{post().user}}
+    </span>
     <span class="text-base text-bold text-alternative">•</span>
-    <span [innerHTML]="post().publishTime" class="text-base text-bold text-alternative"></span>
+    <span class="text-base text-bold text-alternative">
+      {{post().publishTime}}
+    </span>
   </div>
 
-  <span [innerHTML]="post().text" class="text-base text-regular"></span>
+  <span class="text-base text-regular">
+    {{post().text}}
+  </span>
 
   <app-interactive-section [post]="post()"/>
 </div>

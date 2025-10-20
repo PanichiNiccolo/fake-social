@@ -4,18 +4,18 @@
           (click)="onLikeClick()">
     <mat-icon>favorite</mat-icon>
   </button>
-  <span [innerHTML]="post().likes"
-        [class.actioned]="post().isLiked">
+  <span [class.actioned]="post().isLiked">
+    {{post().likes}}
   </span>
 </div>
 
- @let commentsQnt = post().comments.length;
+ @let isCommented = post().isCommented;
 <div class="interactive-section__wrapper">
   <button mat-icon-button class="interactive-section__button"
-          [class.actioned]="post().isCommented">
+          [class.actioned]="isCommented">
     <mat-icon>chat bubble</mat-icon>
   </button>
-  <span [innerHTML]="commentsQnt"
-        [class.actioned]="post().isCommented">
+  <span [class.actioned]="isCommented">
+    {{post().comments.length}}
   </span>
 </div>

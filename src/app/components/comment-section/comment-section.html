@@ -1,6 +1,8 @@
 <div class="comment-section__title">
   <span class="text-base text-regular text-alternative">Commenti per</span>
-  <span [innerHTML]="post().user" class="text-base text-bold text-alternative"></span>
+  <span class="text-base text-bold text-alternative">
+    {{post().user}}
+  </span>
 </div>
 
 @if (post().comments.length > 0) {

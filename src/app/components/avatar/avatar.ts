@@ -11,9 +11,5 @@ import {NgOptimizedImage} from '@angular/common';
 })
 export class Avatar {
 
-  private readonly DEFAULT_PX_SIZE: number = 64;
-
-  pxSize = input<number>(this.DEFAULT_PX_SIZE);
   urlImage = input.required<string>();
-
 }
